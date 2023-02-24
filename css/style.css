@@ -9,6 +9,10 @@ div {
     width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 .main-container {
     margin: 0 auto;
     width: 70vw;
@@ -36,4 +40,12 @@ div {
 
 .form-container {
     height: 30%;
+}
+
+input, label {
+    display: block;
+}
+
+ul {
+    columns: 2;
 }

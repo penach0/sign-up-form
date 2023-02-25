@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+}
+
 div {
     border: solid 0.5px;
     width: 100%;
@@ -13,13 +19,6 @@ ul {
     list-style: none;
     padding: 0;
     columns: 2;
-}
-
-.main-container {
-    margin: 0 auto;
-    width: 70vw;
-    height: 100vh;
-    display: flex;
 }
 
 .img-container {

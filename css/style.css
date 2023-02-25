@@ -19,7 +19,6 @@ div {
 ul {
     list-style: none;
     padding: 0;
-    columns: 2;
 }
 
 input,
@@ -60,11 +59,17 @@ body {
 }
 
 .main-container > * {
-    padding-left: 40px ;
+    padding-left: 45px ;
 }
 
 .text-container {
     flex: 1.1;
+}
+
+.text-container p {
+    max-width: 55ch;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 fieldset {
@@ -75,8 +80,19 @@ fieldset {
     flex: .9;
 }
 
+/* Elements */
+
+.form-list {
+    columns: 2;
+}
 
 .create {
     margin-top: 30px;
     padding: 10px 40px;
+}
+
+/* Modifiers */
+
+.push-down {
+    margin-top: 130px;
 }

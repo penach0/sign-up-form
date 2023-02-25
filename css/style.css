@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* General Styles */
+
 body {
     height: 100vh;
     display: flex;
@@ -19,6 +21,24 @@ ul {
     padding: 0;
     columns: 2;
 }
+
+input,
+label {
+    display: block;
+}
+
+fieldset {
+    border: none;
+}
+
+/*  Typography */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ /* Blocks */
+
 
 .img-container {
     width: 37%;
@@ -59,9 +79,4 @@ fieldset {
 .create {
     margin-top: 30px;
     padding: 10px 40px;
-}
-
-input,
-label {
-    display: block;
 }

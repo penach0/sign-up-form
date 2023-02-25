@@ -5,7 +5,6 @@
 }
 
 body {
-    margin: 0 auto;
     height: 100vh;
     display: flex;
 }
@@ -22,7 +21,7 @@ ul {
 }
 
 .img-container {
-    flex: 1;
+    width: 37%;
     position: relative;
 }
 
@@ -35,24 +34,25 @@ ul {
     height: 13%;
 }
 
-.right-container{
-    flex: 2;
+.main-container{
     display: flex;
     flex-direction: column;
-    justify-content: center; 
 }
 
-.right-container > * {
+.main-container > * {
     padding-left: 40px ;
 }
 
 .text-container {
-    flex: 1.05;
-
+    flex: 1.1;
 }
 
 fieldset {
-    flex:0.9;
+    flex-basis: 29%;
+}
+
+.action-container {
+    flex: .9;
 }
 
 

@@ -9,23 +9,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="img-container">
-        <div class="logo-container">
-            <img src="img/logo.svg" alt="logo">
-            <a class="logo-text" href="#">Odin</a>
+    <div class="sidebar">
+        <div class="logo">
+            <img class="logo__svg" src="img/logo.svg" alt="logo">
+            <a class="logo__text" href="#">Odin</a>
         </div>
     </div>
-    <div class="main-container">
 
-        <div class="text-container">
-            <p class="push-down">This is not a real online service! You know you need something
+    <div class="main">
+        <div class="main__text">
+            <p class="main__text--push-down">This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.<br>
                 Sign up <em>now</em> to get started.
             </p>
             <p>You <em>know</em> you want to.</p>
         </div>
 
-        <fieldset>
+        <fieldset class="main__form">
             <h1>Let's do this!</h1>
 
             <form action="" id="sign-up">
@@ -58,9 +58,9 @@
             </form>
         </fieldset>
 
-        <div class="action-container">
-            <button type="submit" form="sign-up" class="create">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
+        <div class="main__action">
+            <button type="submit" form="sign-up" class="main__btn">Create Account</button>
+            <p>Already have an account? <a href="#" class="main__login-link">Log in</a></p>
         </div>
     </div>
 </body>

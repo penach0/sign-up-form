@@ -26,6 +26,10 @@ li {
     max-width: fit-content;
 }
 
+a {
+    text-decoration: none;
+}
+
 input,
 label {
     display: block;
@@ -52,10 +56,14 @@ body {
 .logo-container {
     position: absolute;
     text-align: center;
+    padding: 15px;
     display: flex;
     justify-content: center;
     top: 22%;
     height: 13%;
+
+
+    background-color: black;
 }
 
 .main-container{
@@ -79,7 +87,6 @@ body {
 
 fieldset {
     flex-basis: 29%;
-    display: flex;
 }
 
 .action-container {
@@ -87,6 +94,10 @@ fieldset {
 }
 
 /* Elements */
+
+#sign-up {
+    display: flex;
+}
 
 .form-list {
     columns: 2;
@@ -102,4 +113,10 @@ fieldset {
 
 .push-down {
     margin-top: 130px;
+}
+
+.logo-text {
+    align-self: center;
+    color: white;
+    font-size: 60px;
 }

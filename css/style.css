@@ -23,10 +23,6 @@ ul {
     margin: 0;
 }
 
-li {
-    max-width: fit-content;
-}
-
 a {
     text-decoration: none;
 }
@@ -122,6 +118,7 @@ fieldset {
     width: 20rem;
 
     padding-left: 0.5rem;
+    margin-bottom: 1.25rem;
 
     border: 0.1rem solid hsl(220, 13%, 91%);
     border-radius: 0.3rem;

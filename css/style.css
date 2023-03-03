@@ -32,12 +32,19 @@ a {
 }
 
 input,
+button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input,
 label {
     display: block;
 }
 
 fieldset {
     border: none;
+    padding: 0;
 }
 
 /*  Typography */
@@ -71,6 +78,10 @@ fieldset {
     flex-direction: column;
 }
 
+.form {
+    flex-basis: 29%;
+}
+
 /* Elements */
 
 .logo__text {
@@ -93,21 +104,27 @@ fieldset {
     font-weight: bold;
 }
 
-.main__form {
-    flex-basis: 29%;
-}
-
 .main__action {
     flex: .9;
 }
 
-#sign-up {
+.form__container {
     display: flex;
 }
 
-.form-list {
+.form__list {
     columns: 2;
     column-gap: 60px;
+}
+
+.form__input {
+    height: 2rem;
+    width: 20rem;
+
+    padding-left: 0.5rem;
+
+    border: 0.1rem solid hsl(0, 0%, 69%);
+    border-radius: 0.3rem;
 }
 
 .main__btn {
@@ -120,3 +137,4 @@ fieldset {
 .main__text--push-down {
     margin-top: 150px;
 }
+

@@ -25,38 +25,38 @@
             <p>You <em>know</em> you want to.</p>
         </div>
 
-        <fieldset class="main__form">
+        <form action="" class="form" id="sign-up">
             <h1>Let's do this!</h1>
-
-            <form action="" id="sign-up">
-                <ul class="form-list">
+            
+            <fieldset class="form__container">
+                <ul class="form__list">
                     <li>
                         <label for="first_name ">FIRST NAME</label>
-                        <input type="text" name="first_name" required>
+                        <input class="form__input" type="text" name="first_name" required>
                     </li>
                     <li>
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="" required>
+                        <input class="form__input" type="email" name="email" id="" required>
                     </li>
                     <li>
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" name="pwd" id="" required>
+                        <input class="form__input" type="password" name="pwd" id="" required>
                     </li>
                     <li>
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" name="last_name" id="" required>
+                        <input class="form__input" type="text" name="last_name" id="" required>
                     </li>
                     <li>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="">
+                        <input class="form__input" type="tel" name="phone" id="">
                     </li>
                     <li>
                         <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm_pwd" id="" required>
+                        <input class="form__input" type="password" name="confirm_pwd" id="" required>
                     </li>
                 </ul>
-            </form>
-        </fieldset>
+            </fieldset>
+        </form>
 
         <div class="main__action">
             <button type="submit" form="sign-up" class="main__btn">Create Account</button>

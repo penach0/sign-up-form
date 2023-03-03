@@ -33,7 +33,6 @@ button {
     font-size: 100%;
 }
 
-input,
 label {
     display: block;
 }
@@ -87,7 +86,7 @@ fieldset {
 }
 
 .main > * {
-    padding-left: 45px ;
+    padding-inline: 2.85rem;
 }
 
 .main__text {

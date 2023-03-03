@@ -104,13 +104,12 @@ fieldset {
     flex: .9;
 }
 
-.form__container {
-    display: flex;
-}
-
 .form__list {
-    columns: 2;
-    column-gap: 60px;
+    max-width: 50rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.75rem;
 }
 
 .form__input {

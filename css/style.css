@@ -102,6 +102,9 @@ fieldset {
 
 .form {
     flex-basis: 29%;
+    z-index: 1;
+
+    box-shadow: 1rem 0.5rem 0.7rem 0.1rem hsl(180, 2%, 90%)
 }
 
 /* Elements */

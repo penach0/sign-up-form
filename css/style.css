@@ -34,7 +34,9 @@ ul {
     margin: 0;
 }
 
-a {
+a,
+a:visited,
+a:active {
     text-decoration: none;
 }
 
@@ -64,6 +66,10 @@ fieldset {
     width: 37%;
     position: relative;
 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
     background-image: url('../img/sidebar-bg.jpg');
     background-size: cover;
 }
@@ -75,7 +81,7 @@ fieldset {
     display: flex;
     justify-content: center;
     top: 22%;
-    height: 13%;
+    height: 16%;
 
 
     background-color: var(--color-bg-logo);
@@ -96,6 +102,15 @@ fieldset {
     align-self:  center;
     color: white;
     font-size: 60px;
+}
+
+.sidebar__img-credits {
+    color: white;
+}
+
+.sidebar__img-credits > a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 .main > * {

@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('../fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('../fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *,
 *::before,
 *::after{
@@ -100,12 +109,14 @@ fieldset {
 
 .logo__text {
     align-self:  center;
-    color: white;
-    font-size: 60px;
+
+    font-family: 'norsebold';
+    color: hsl(0, 0%, 100%);
+    font-size: 5.5rem;
 }
 
 .sidebar__img-credits {
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 .sidebar__img-credits > a {

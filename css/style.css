@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+
+:root {
+    --color-bg-main: hsl(210, 20%, 98%);
+    --color-bg-logo: hsla(0, 0%, 0%, 0.603);
+    --color-clickable: hsl(92, 20%, 35%);
+    --color-form-header: hsl(216, 38%, 13%);
+    --color-text-label: hsl(215, 28%, 17%);
+    --color-invalid-pass: hsl(0, 74%, 42%);
+}
+
 /* General Styles */
 
 body {
@@ -60,7 +71,6 @@ fieldset {
     padding: 15px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     top: 22%;
     height: 13%;
 

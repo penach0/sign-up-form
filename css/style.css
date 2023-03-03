@@ -8,7 +8,7 @@
 
 :root {
     --color-bg-main: hsl(210, 20%, 98%);
-    --color-bg-logo: hsla(0, 0%, 0%, 0.603);
+    --color-bg-logo: hsla(0, 0%, 0%, 0.486);
     --color-clickable: hsl(92, 20%, 35%);
     --color-form-header: hsl(216, 38%, 13%);
     --color-text-label: hsl(215, 28%, 17%);
@@ -63,6 +63,9 @@ fieldset {
 .sidebar {
     width: 37%;
     position: relative;
+
+    background-image: url('../img/sidebar-bg.jpg');
+    background-size: cover;
 }
 
 .logo {
@@ -75,7 +78,7 @@ fieldset {
     height: 13%;
 
 
-    background-color: black;
+    background-color: var(--color-bg-logo);
 }
 
 .main{
@@ -101,6 +104,8 @@ fieldset {
 
 .main__text {
     flex: 1.1;
+
+    background-color: var(--color-bg-main);
 }
 
 .main__text p {
@@ -111,6 +116,8 @@ fieldset {
 
 .main__action {
     flex: .9;
+
+    background-color: var(--color-bg-main);
 }
 
 .form__list {
@@ -135,6 +142,13 @@ fieldset {
 .main__btn {
     margin-top: 30px;
     padding: 10px 40px;
+
+    background-color: var(--color-clickable);
+    color: hsl(0, 0%, 100%);
+}
+
+.main__login-link {
+    color: var(--color-clickable)
 }
 
 /* Modifiers */

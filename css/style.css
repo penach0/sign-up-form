@@ -97,6 +97,8 @@ fieldset {
 }
 
 .form {
+    padding-bottom: 1.25rem;
+
     flex-basis: 29%;
     z-index: 1;
 
@@ -176,6 +178,8 @@ fieldset {
 
     background-color: var(--color-clickable);
     color: hsl(0, 0%, 100%);
+
+    cursor: pointer;
 }
 
 .main__login-link {

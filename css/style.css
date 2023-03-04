@@ -56,10 +56,6 @@ button {
     border: none;
 }
 
-label {
-    display: block;
-}
-
 fieldset {
     border: none;
     padding: 0;
@@ -136,16 +132,11 @@ fieldset {
     background-color: var(--color-bg-main);
 }
 
-.main__text p {
-    max-width: 55ch;
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
 .main__action {
     flex: .9;
 
     background-color: var(--color-bg-main);
+
 }
 
 .form__list {
@@ -165,6 +156,13 @@ fieldset {
 
     border: 0.1rem solid hsl(220, 13%, 91%);
     border-radius: 0.3rem;
+}
+
+.form__label {
+    display: block;
+
+    font-size: 0.9rem;
+    color: var(--color-text-label)
 }
 
 .main__btn {
@@ -192,6 +190,12 @@ fieldset {
 }
 
 /* Utility classes */
+
+.strong-p{
+    max-width: 55ch;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
 
 /* Pseudo Elements and Classes */

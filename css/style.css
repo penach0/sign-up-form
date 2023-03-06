@@ -22,6 +22,7 @@
     --color-form-header: hsl(216, 38%, 13%);
     --color-text-label: hsl(215, 28%, 17%);
     --color-invalid-pass: hsl(0, 74%, 42%);
+    --color-valid-pass: hsl(120, 100%, 29%);
     --color-shadow: hsl(180, 2%, 90%);
 }
 
@@ -162,8 +163,6 @@ fieldset {
     width: 16rem;
 
     padding-left: 0.5rem;
-    margin-bottom: 1.25rem;
-    /* margin-right: 1.25rem; */
 
     border: 0.1rem solid hsl(220, 13%, 91%);
     border-radius: 0.3rem;
@@ -174,6 +173,11 @@ fieldset {
 
     font-size: 0.9rem;
     color: var(--color-text-label)
+}
+
+.form__password-feedback {
+    display: block;
+    color: var(--color-invalid-pass);
 }
 
 .main__btn {

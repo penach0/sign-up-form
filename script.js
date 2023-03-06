@@ -2,19 +2,31 @@ const form = document.querySelector('.form')
 
 const password = form.pwd
 const confirmPassword = form.confirm_pwd
+const passwordFeedback = document.querySelector('.form__password-feedback')
 
-password.classList.add('invalid-password')
-confirmPassword.classList.add('invalid-password')
+const noMatch = () => {
+    password.classList.add('invalid-password')
+    confirmPassword.classList.add('invalid-password')
+
+    passwordFeedback.style.visibility = 'visible'
+}
+
+const match = () => {
+    password.classList.remove('invalid-password')
+    confirmPassword.classList.remove('invalid-password')
+
+    passwordFeedback.style.visibility = 'hidden'
+}
 
 const checkPassword = ()=> {
     if((password.value !== confirmPassword.value) || (password.value === '' && confirmPassword.value === '') ) {
-        password.classList.add('invalid-password')
-        confirmPassword.classList.add('invalid-password')
+        noMatch()
     }
     else {
-        password.classList.remove('invalid-password')
-        confirmPassword.classList.remove('invalid-password')
+        match()
     }
 }
 
 [password, confirmPassword].forEach(element => addEventListener('keyup', checkPassword))
+
+noMatch()

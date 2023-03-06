@@ -7,6 +7,7 @@ const passwordFeedback = document.querySelector('.form__password-feedback')
 const noMatch = () => {
     password.classList.add('invalid-password')
     confirmPassword.classList.add('invalid-password')
+    confirmPassword.setCustomValidity('Please make sure your passwords match')
 
     passwordFeedback.style.visibility = 'visible'
 }
@@ -14,6 +15,9 @@ const noMatch = () => {
 const match = () => {
     password.classList.remove('invalid-password')
     confirmPassword.classList.remove('invalid-password')
+
+    confirmPassword.setCustomValidity('')
+
 
     passwordFeedback.style.visibility = 'hidden'
 }

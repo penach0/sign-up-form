@@ -73,7 +73,6 @@ fieldset {
     --font-size-lg: clamp(1.37rem, 0.74vw + 1.18rem, 1.78rem);
     --font-size-xl: clamp(1.71rem, 1.2vw + 1.41rem, 2.37rem);
     --font-size-xxl: clamp(2.14rem, 1.86vw + 1.67rem, 3.16rem);
-    --font-size-xxxl: clamp(5.5rem, 2.8vw + 1.97rem, 4.21rem);
 }
 
  /* Blocks */
@@ -135,7 +134,7 @@ fieldset {
 
     font-family: 'norsebold';
     color: hsl(0, 0%, 100%);
-    font-size: var(--font-size-xxxl);
+    font-size: 5.5rem
 }
 
 .sidebar__img-credits {

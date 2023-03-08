@@ -16,6 +16,7 @@
 /* Variables */
 
 :root {
+    /* Colors */
     --color-bg-main: hsl(210, 20%, 98%);
     --color-bg-logo: hsla(0, 0%, 0%, 0.486);
     --color-clickable: hsl(92, 20%, 35%);
@@ -24,15 +25,23 @@
     --color-invalid-pass: hsl(0, 74%, 42%);
     --color-valid-pass: hsl(120, 100%, 29%);
     --color-shadow: hsl(180, 2%, 90%);
+
+    /* Typography */
+    --font-size-sm: clamp(0.7rem, 0.09vw + 0.68rem, 0.75rem);
+    --font-size-base: clamp(0.88rem, 0.23vw + 0.82rem, 1rem);
+    --font-size-md: clamp(1.09rem, 0.43vw + 0.98rem, 1.33rem);
 }
 
 /* General Styles */
 
 body {
+    /* Layout */
+
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
 
+    /* Typography */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -64,21 +73,12 @@ fieldset {
     padding: 0;
 }
 
-/*  Typography */
-
-:root {
-    --font-size-sm: clamp(0.7rem, 0.09vw + 0.68rem, 0.75rem);
-    --font-size-base: clamp(0.88rem, 0.23vw + 0.82rem, 1rem);
-    --font-size-md: clamp(1.09rem, 0.43vw + 0.98rem, 1.33rem);
-    --font-size-lg: clamp(1.37rem, 0.74vw + 1.18rem, 1.78rem);
-    --font-size-xl: clamp(1.71rem, 1.2vw + 1.41rem, 2.37rem);
-    --font-size-xxl: clamp(2.14rem, 1.86vw + 1.67rem, 3.16rem);
-}
-
  /* Blocks */
 
 
 .sidebar {
+    /* Layout */
+
     flex-basis: 550px;
     flex-grow: 1;
 
@@ -88,22 +88,29 @@ fieldset {
     align-items: flex-end;
     justify-content: center;
 
+    /* Style */
+
     background-image: url('../img/sidebar-bg.jpg');
     background-size: cover;
 }
 
 .main{
+    /* Layout */
+
     display: flex;
     flex-basis: 0;
     flex-grow: 999;
     flex-direction: column;
-
     min-inline-size: 50%;
+
+    /* Style */
 
     background-color: var(--color-bg-main);
 }
 
 .logo {
+    /* Layout */
+
     position: absolute;
     top: 22%;
     height: 16%;
@@ -114,14 +121,20 @@ fieldset {
     text-align: center;
     padding: 1rem;
 
+    /* Style */
+
     background-color: var(--color-bg-logo);
 }
 
 .form {
+    /* Layout */
+
     padding-bottom: 1.25rem;
 
     flex-basis: 29%;
     z-index: 1;
+
+    /* Style */
 
     background-color: hsl(0, 0%, 100%);
     box-shadow: 1rem 0.5rem 0.7rem 0.1rem var(--color-shadow);
@@ -130,24 +143,39 @@ fieldset {
 /* Elements */
 
 .logo__text {
+    /* Layout */
+
     align-self:  center;
 
-    font-family: 'norsebold';
+    /* Style */
+
     color: hsl(0, 0%, 100%);
+
+    /* Typography */
+
+    font-family: 'norsebold';
     font-size: 5.5rem
 }
 
 .sidebar__img-credits {
+    /* Style */
+
     color: hsl(0, 0%, 100%);
+
+    /* Typography */
     font-size: var(--font-size-sm);
 }
 
 .sidebar__img-credits > a {
+    /* Style */
+
     color: inherit;
     text-decoration: underline;
 }
 
 .main > * {
+    /* Layout */
+
     padding-inline: max(2vw, 1.5rem);
 }
 
@@ -160,6 +188,8 @@ fieldset {
 }
 
 .form__list {
+    /* Layout */
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between ;
@@ -169,6 +199,8 @@ fieldset {
 }
 
 .form__input {
+    /* Layout */
+    
     height: 2rem;
     width: 16rem;
 
@@ -179,6 +211,8 @@ fieldset {
 }
 
 .form__label {
+    /* Layout */
+
     display: block;
 
     font-size: var(--font-size-base);
@@ -186,16 +220,21 @@ fieldset {
 }
 
 .form__password-feedback {
+    /* Layout */
+
     display: block;
     color: var(--color-invalid-pass);
 }
 
 .main__btn {
+    /* Layout */
+
     margin: 1.8rem 0 1rem;
     padding: 1rem 3rem;
     font-weight: bold;
 
-
+    /* Style */
+    
     border-radius: 0.4rem;
     box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem var(--color-shadow);
 
@@ -219,7 +258,11 @@ fieldset {
 /* Utility classes */
 
 .strong-p {
+    /* Layout */
+
     max-width: 55ch;
+
+    /* Typography */
     font-size: var(--font-size-md);
     font-weight: bold;
 }
